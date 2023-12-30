@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-primary: #f5f6f6;
+    --text-secondary: #cdd0d4;
+    --surface-background: #171023;
+    --surface-secondary: #413a4f;
+    --tech-color: #9955e8;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Kalam:wght@300;400;700&display=swap');
+
+body {
+    width: 1440px;
+    font-family: 'Heebo', sans-serif;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    background: var(--surface-background);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.75);
+    width: 1440px;
+    height: 80px;
+    z-index: 2;
+
+    display: flex;
+    padding: 16px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 770px;
+}
+
+.logo {
+    font-family: 'Kablam', cursive;
+    font-style: italic;
+    color: var(--text-primary);
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+nav li ul {
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+}
+
+nav li ul:hover {
+    color: var(--text-secondary);
+    cursor: default;
+}
+
+.theme i {
+    font-size: 24px;
+}
+
+/* MAIN */
+
+main {
+    background-color: #171023;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.headline {
+    display: flex;
+    padding: 96px 112px;
+    align-items: center;
+    gap: 136px;
+}
+
+.container {
+    display: flex;
+    width: 592px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.name {
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: 40px;
+
+
+    background: linear-gradient(90deg, #9955E8 0%, #7BFFAF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.front-end {
+    color: var(--text-primary);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.mytext {
+    color: var(--text-secondary);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.btns {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.btns button {
+    display: flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 8px;
+    border: none;
+    color: var(--text-primary);
+}
+
+#resume {
+    background: var(--surface-secondary);
+    color: var(--text-primary);
+}
+
+#start {
+    background: #8a42db;
+}
+
+.btns button i {
+    font-size: 24px;
+}
+
+.img-headline svg {
+    width: 488px;
+    height: 417px;
+    flex-shrink: 0;
+
+}
+
+.arrow svg {
+    position: absolute;
+    right: 600px;
+    top: 590px;
+}
+
+.about {
+    display: flex;
+    padding: 72px;
+    align-items: flex-start;
+    gap: 136px;
+    align-self: stretch;
+    background: var(--surface-background);
+}
+
+.about-container {
+    display: flex;
+    padding: 72px;
+    align-items: flex-start;
+    gap: 136px;
+    flex: 1 0 0;
+
+    border-radius: 16px;
+    background: var(--surface-secondary);
+}
+
+.about-container img {
+    width: 488px;
+    height: 396px;
+    border-radius: 20px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.tech-stack i {
+    font-size: 24px;
+    color: var(--tech-color);
+}
+
+.text-about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+#about-me {
+    color: #7DFFAF;
+    font-family: 'Kalam', cursive;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.o1 {
+    color: var(--text-primary);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.o2 {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#resume-about {
+    display: flex;
+
+    padding: 16px 24px;
+    justify-content: center;
+    min-width: 112px;
+    gap: 8px;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--tech-color);
+    color: var(--text-primary);
+
+}
