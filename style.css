@@ -229,7 +229,6 @@ main {
 
 #resume-about {
     display: flex;
-
     padding: 16px 24px;
     justify-content: center;
     min-width: 112px;
@@ -265,10 +264,106 @@ main {
     color: #7dffaf;
 }
 
-.project-text {
+.projects-headline p {
     font-size: 24px;
     font-weight: 500;
     line-height: 32px;
     color: var(--text-primary);
 }
 
+.projects-cards {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.card {
+    background-color: #2c243b;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 16px;
+
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.card-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.card-information p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--text-secondary);
+}
+
+.card-information i {
+    font-size: 24px;
+    color: var(--text-primary);
+}
+
+.card-info img {
+    height: 160px;
+    align-self: stretch;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.techs {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.card-text h2 {
+    color: var(--text-primary);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    align-self: stretch;
+}
+
+.card-text p {
+    color: var(--text-primary);
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.projects button {
+    display: flex;
+    min-width: 112px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: var(--surface-secondary);
+    border: none;
+    color: var(--text-primary);
+}
+
+.projects button i {
+    font-size: 24px;
+}
