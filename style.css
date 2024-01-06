@@ -767,6 +767,7 @@ footer li ul a:hover {
 
 #project-tech i {
     font-size: 24px;
+    color: var(--tech-secondary);
 }
 
 #project-information h1 {
