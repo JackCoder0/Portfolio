@@ -12,23 +12,22 @@
 
 <body>
 
-    <header>
+    <header id="home">
         <p class="logo">Jackson<b>Silva</b></p>
         <nav>
             <li>
-                <ul><a href="">Home</a></ul>
-                <ul><a href="">Sobre</a></ul>
-                <ul><a href="">Projetos</a></ul>
-                <ul><a href="">Contato</a></ul>
+                <ul><a href="#headline">Home</a></ul>
+                <ul><a href="#about">Sobre</a></ul>
+                <ul><a href="#projects">Projetos</a></ul>
+                <ul><a href="#contact">Contato</a></ul>
                 <ul id="language">EN</ul>
                 <ul class="theme"><i class="uil uil-sun"></i></ul>
             </li>
         </nav>
     </header> <!-- desktop -->
 
-
     <main>
-        <section class="headline">
+        <section id="headline" class="headline">
             <div class="container">
                 <p class="name">Olá, eu sou Jackson!</p>
                 <p class="front-end">Desenvolvedor Front-End</p>
@@ -54,7 +53,7 @@
             </div>
         </section> <!-- headline -->
 
-        <section class="about">
+        <section id="about" class="about">
             <div class="about-container">
                 <img src="assets/image/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" alt="">
                 <div class="about-info">
@@ -78,7 +77,7 @@
             </div>
         </section> <!-- about -->
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="projects-headline">
                 <h2>Projetos</h2>
                 <p>Dê uma olhada nos meus projetos em destaque</p>
@@ -87,72 +86,77 @@
             <div class="projects-cards">
                 <div class="card">
                     <div class="card-info">
-                        <img src="assets/image/o-que-e-paisagem.jpg">
+                        <img src="assets/image/EXPLORADORBR.png">
                         <div class="card-information">
-                            <p>Jul - Dec 2023</p>
+                            <p>Nov 2023</p>
                             <div class="techs">
                                 <i class="devicon-javascript-plain"></i>
                             </div>
                         </div>
                         <div class="card-text">
-                            <h2>DevLiks</h2>
-                            <p>A link agrator for social media</p>
+                            <h2>Explorador BR</h2>
+                            <p>Um site sobre as regiões do Brasil.</p>
                         </div>
                     </div>
                     <div class="project-link">
-                        <i class="uil uil-github"></i>
-                        <i class="uil uil-arrow-up-right"></i>
+                        <a target="_blank" href="https://github.com/JackCoder0/ProjetoFaculdadeBrasil"><i
+                                class="uil uil-github"></i></a>
+                        <a target=""
+                            href="https://projeto-faculdade-brasil-6fapoy2u3-jackcoder0s-projects.vercel.app/index.html"><i
+                                class="uil uil-arrow-up-right"></i></a>
                     </div>
-
                 </div>
 
                 <div class="card">
                     <div class="card-info">
-                        <img src="assets/image/o-que-e-paisagem.jpg">
+                        <img src="assets/image/PlayPédia.png">
                         <div class="card-information">
-                            <p>Jul - Dec 2023</p>
+                            <p>Oct 2023</p>
                             <div class="techs">
                                 <i class="devicon-javascript-plain"></i>
                             </div>
                         </div>
                         <div class="card-text">
-                            <h2>DevLiks</h2>
-                            <p>A link agrator for social media</p>
+                            <h2>PlayPédia</h2>
+                            <p>Um site inspirado no Wikipedia, que fala sobre God of War.</p>
                         </div>
                     </div>
                     <div class="project-link">
-                        <i class="uil uil-github"></i>
-                        <i class="uil uil-arrow-up-right"></i>
+                        <a target="_blank" href="https://github.com/JackCoder0/cloneWikipediaModerno"><i
+                                class="uil uil-github"></i></a>
+                        <a target="_blank"
+                            href="https://clone-wikipedia-moderno-2hltfmon5-jackcoder0s-projects.vercel.app/index.html"><i
+                                class="uil uil-arrow-up-right"></i></a>
                     </div>
-
                 </div>
 
                 <div class="card">
                     <div class="card-info">
-                        <img src="assets/image/o-que-e-paisagem.jpg">
+                        <img src="assets/image/EXPLORADORBR.png">
                         <div class="card-information">
-                            <p>Jul - Dec 2023</p>
+                            <p>Nov 2023</p>
                             <div class="techs">
                                 <i class="devicon-javascript-plain"></i>
                             </div>
                         </div>
                         <div class="card-text">
-                            <h2>DevLiks</h2>
-                            <p>A link agrator for social media</p>
+                            <h2>Explorador BR</h2>
+                            <p>Um site sobre as regiões do Brasil.</p>
                         </div>
                     </div>
                     <div class="project-link">
-                        <i class="uil uil-github"></i>
-                        <i class="uil uil-arrow-up-right"></i>
+                        <a target="_blank" href="https://github.com/JackCoder0/ProjetoFaculdadeBrasil"><i
+                                class="uil uil-github"></i></a>
+                        <a target=""
+                            href="https://projeto-faculdade-brasil-6fapoy2u3-jackcoder0s-projects.vercel.app/index.html"><i
+                                class="uil uil-arrow-up-right"></i></a>
                     </div>
-
                 </div>
-
             </div>
-            <button>Veja Tudo <i class="uil uil-angle-right"></i></button>
+            <button id="see-all">Veja Tudo <i class="uil uil-angle-right"></i></button>
         </section> <!-- projects -->
 
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact-container">
                 <div class="contact-me">
                     <img src="assets/image/Jackson.jpeg" alt="">
@@ -166,9 +170,11 @@
                                 jacksonxcontato13@gmail.com ou entre em contato pelas redes sociais.</p>
                         </div>
                         <div class="contact-social">
-                            <i class="uil uil-github"></i>
-                            <i class="uil uil-linkedin"></i>
-                            <i class="uil uil-instagram"></i>
+                            <a target="_blank" href="https://github.com/JackCoder0"><i class="uil uil-github"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/jackson-silva-coder/"><i
+                                    class="uil uil-linkedin"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/nevergiveup_man0/"><i
+                                    class="uil uil-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -186,10 +192,10 @@
     <footer>
         <p>Jackson Silva 2023</p>
         <li>
-            <ul>GitHub</ul>
-            <ul>Linkedin</ul>
-            <ul>Instagram</ul>
-            <ul><i class="uil uil-arrow-up"></i></ul>
+            <ul><a target="_blank" href="https://github.com/JackCoder0">GitHub</a></ul>
+            <ul><a target="_blank" href="https://www.linkedin.com/in/jackson-silva-coder/">Linkedin</a></ul>
+            <ul><a target="_blank" href="https://www.instagram.com/nevergiveup_man0/">Instagram</a></ul>
+            <ul><a href="#home"><i class="uil uil-arrow-up"></i></a></i></ul>
         </li>
     </footer>
 

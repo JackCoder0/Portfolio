@@ -18,10 +18,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&family=Kalam:wght@300;400;700&display=swap');
 
-body {
+body,
+html {
     width: 100%;
     font-family: 'Heebo', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -401,7 +403,7 @@ main {
     right: 16px;
 }
 
-.project-link i {
+.project-link a {
     color: var(--text-primary);
     font-size: 24px;
     background: var(--surface-background);
@@ -410,7 +412,11 @@ main {
     border-radius: 8px;
 }
 
-.project-link i:hover {
+#see-all {
+    display: none;
+}
+
+.project-link a:hover {
     background: var(--surface-secondary);
     transition: 0.5s;
 }
@@ -590,6 +596,10 @@ main {
     font-size: 24px;
 }
 
+.contact-social a {
+    text-decoration: none;
+}
+
 .contact-social i:hover {
     background: var(--surface-tertiary);
 }
@@ -685,13 +695,18 @@ footer li {
     gap: 24px;
 }
 
-footer li ul {
+footer li ul a {
     padding: 8px;
     gap: 8px;
     border-radius: 8px;
     color: var(--text-secondary);
+    text-decoration: none;
 }
 
-footer li ul i {
+footer li ul a i {
     font-size: 24px;
+}
+
+footer li ul a:hover {
+    color: var(--text-primary);
 }
