@@ -1232,6 +1232,10 @@ footer li ul a:hover {
         align-self: stretch;
     }
 
+    h1 {
+        text-align: center;
+    }
+
     #frame {
         display: flex;
         width: 100%;
@@ -1239,14 +1243,15 @@ footer li ul a:hover {
         align-items: center;
         gap: 24px;
     }
-    #frame-project{
+
+    #frame-project {
         width: 100%;
         border-radius: 0;
         padding: 24px;
         gap: 24px;
     }
-    #frame-project h2{
+
+    #frame-project h2 {
         text-align: center;
-        margin: 0 auto;
     }
 }
