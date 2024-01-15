@@ -985,11 +985,9 @@ footer li ul a:hover {
         gap: 24px;
         align-self: stretch;
         width: 100%;
-        text-align: center;
     }
-
-    .name {
-        text-align: center;
+    .name{
+        margin: 0 auto;
     }
 
     .text-container-mobile {
