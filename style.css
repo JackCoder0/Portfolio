@@ -986,7 +986,8 @@ footer li ul a:hover {
         align-self: stretch;
         width: 100%;
     }
-    .name{
+
+    .name {
         margin: 0 auto;
     }
 
@@ -1069,7 +1070,7 @@ footer li ul a:hover {
         gap: 32px;
     }
 
-    .tech-stack{
+    .tech-stack {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1154,11 +1155,12 @@ footer li ul a:hover {
         width: 100%;
     }
 
-    .contact-me img{
+    .contact-me img {
         margin: 0 auto;
     }
 
-    .contact-title, .contact-title h2 {
+    .contact-title,
+    .contact-title h2 {
         width: 100%;
     }
 
@@ -1194,5 +1196,56 @@ footer li ul a:hover {
         flex-direction: column;
         padding: 24px 16px;
         gap: 16px;
+    }
+
+    /* PROJECT */
+
+    #main {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #project {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #project img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    #project-information {
+        padding: 24px 24px 48px 24px;
+        flex-direction: column;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    #section-group {
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+
+    #frame {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    #frame-project{
+        width: 100%;
+        border-radius: 0;
+        padding: 24px;
+        gap: 24px;
+    }
+    #frame-project h2{
+        text-align: center;
     }
 }
