@@ -1247,5 +1247,6 @@ footer li ul a:hover {
     }
     #frame-project h2{
         text-align: center;
+        margin: 0 auto;
     }
 }
