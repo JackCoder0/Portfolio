@@ -584,7 +584,8 @@ main {
     font-weight: 400;
     line-height: 24px;
 }
-.contact-text p a{
+
+.contact-text p a {
     color: var(--tech-secondary);
     text-decoration: none;
     font-family: 'Kalam', cursive;
@@ -986,6 +987,10 @@ footer li ul a:hover {
         width: 100%;
     }
 
+    .name {
+        text-align: center;
+    }
+
     .text-container-mobile {
         display: flex;
         flex-direction: column;
@@ -1065,6 +1070,13 @@ footer li ul a:hover {
         gap: 32px;
     }
 
+    .tech-stack{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
     .text-about {
         display: flex;
         flex-direction: column;
@@ -1139,11 +1151,16 @@ footer li ul a:hover {
 
     .contact-me,
     .contact-info {
+        text-align: center;
         width: 100%;
     }
 
-    .contact-title {
-        width: 312px;
+    .contact-me img{
+        margin: 0 auto;
+    }
+
+    .contact-title, .contact-title h2 {
+        width: 100%;
     }
 
     .contact-text p {
