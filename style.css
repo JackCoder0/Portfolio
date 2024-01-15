@@ -43,7 +43,7 @@ header {
     position: sticky;
 }
 
-.header-mobile {
+.menu-mobile {
     display: none;
 }
 
@@ -146,6 +146,10 @@ main {
     gap: 32px;
 }
 
+.text-container-mobile {
+    display: none;
+}
+
 .name {
     font-family: 'Kalam', cursive;
     font-weight: 400;
@@ -157,13 +161,13 @@ main {
     -webkit-text-fill-color: transparent;
 }
 
-.front-end {
+.front-end-desk {
     color: var(--text-primary);
     font-size: 24px;
     font-weight: 500;
 }
 
-.mytext {
+.mytext-desk {
     color: var(--text-secondary);
     font-size: 16px;
     font-weight: 400;
@@ -230,7 +234,10 @@ main {
     width: 488px;
     height: 417px;
     flex-shrink: 0;
+}
 
+.img-mobile {
+    display: none;
 }
 
 .about {
@@ -273,7 +280,7 @@ main {
 }
 
 .tech-stack i {
-    font-size: 30px;
+    font-size: 24px;
     color: var(--tech-color-500);
 }
 
@@ -378,6 +385,8 @@ main {
     align-self: stretch;
     border-radius: 16px;
     position: relative;
+    cursor: pointer;
+
 }
 
 
@@ -385,6 +394,7 @@ main {
     border: 1.5px solid var(--tech-secondary);
     box-shadow: 0px 0px 48px 0px rgba(125, 255, 175, 0.24);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .project-link {
@@ -556,6 +566,8 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
+    font-family: 'Kalam', cursive;
+
 }
 
 .contact-title p {
@@ -571,6 +583,11 @@ main {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+}
+.contact-text p a{
+    color: var(--tech-secondary);
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
 }
 
 .contact-social {
@@ -896,4 +913,270 @@ footer li ul a:hover {
 .back:hover {
     background-color: var(--surface-primary);
     cursor: pointer;
+}
+
+/* Telas de Celular */
+
+@media screen and (max-width: 480px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        width: 100%;
+        padding: 8px 8px 8px 16px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 203px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        padding: 12px;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .menu-mobile i {
+        color: var(--text-primary);
+        font-size: 24px;
+    }
+
+    /* MAIN */
+
+    /* HEADLINE */
+
+    .headline {
+        display: flex;
+        padding: 48px 24px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        width: 100%;
+    }
+
+    .img-headline {
+        display: none;
+    }
+
+    .img-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .img-mobile img {
+        width: 312px;
+        height: 266px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        width: 100%;
+    }
+
+    .text-container-mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+
+    .front-end-desk {
+        display: none;
+    }
+
+    .mytext-desk {
+        display: none;
+    }
+
+    .front-end-mobile {
+        color: var(--text-primary);
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .mytext-mobile {
+        color: var(--text-secondary);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .btns {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* ABOUT */
+
+    .about {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        align-self: stretch;
+        width: 100%;
+    }
+
+    .about-container {
+        display: flex;
+        padding: 48px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        align-self: stretch;
+
+        border-radius: 0;
+        background: var(--surface-secondary);
+    }
+
+    .about-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .about-container img {
+        width: 312px;
+        height: 253px;
+        border-radius: 8px;
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .text-about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    #resume-about {
+        margin: 10px auto;
+        display: flex;
+        padding: 16px 24px;
+        justify-content: center;
+        min-width: 112px;
+        gap: 8px;
+        align-items: center;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--tech-color-400);
+        color: var(--text-primary);
+    }
+
+    /* PROJECTS */
+
+    .projects {
+        display: flex;
+        padding: 48px 24px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+
+    .projects-headline {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .projects-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .project-link {
+        display: none;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        padding: 0;
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 48px 24px;
+        flex-direction: column;
+        gap: 40px;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .contact-me,
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-title {
+        width: 312px;
+    }
+
+    .contact-text p {
+        width: 100%;
+    }
+
+    .contact-social {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .inputname,
+    .inputemail,
+    .textarea {
+        width: 100%;
+    }
+
+    .form button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 16px;
+    }
 }

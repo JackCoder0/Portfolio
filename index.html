@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,16 +26,33 @@
                 <ul class="theme"><i class="uil uil-sun"></i></ul>
             </li>
         </nav>
+        <div class="menu-mobile">
+            <i class="uil uil-bars"></i>
+        </div>
     </header> <!-- desktop -->
 
     <main>
         <section id="headline" class="headline">
+            <div class="img-mobile">
+                <img src="assets/image/bro.svg" alt="">
+            </div>
             <div class="container">
                 <p class="name">Olá, eu sou Jackson!</p>
-                <p class="front-end">Desenvolvedor Front-End</p>
-                <p class="mytext">Jackson Antonio Silva, 19 anos, aspirante a desenvolvedor front-end apaixonado por
+                <p class="front-end-desk">Desenvolvedor Front-End e Entusiansta de Inovação</p>
+                <p class="mytext-desk">Jackson Antonio Silva, 19 anos, aspirante a desenvolvedor front-end apaixonado
+                    por
                     programação, basquete e academia. Em busca do primeiro trabalho/estágio para aplicar minha paixão
                     pelo código e contribuir para projetos inovadores.</p>
+
+                <div class="text-container-mobile">
+                    <p class="front-end-mobile">Desenvolvedor Front-End e Entusiansta de Inovação</p>
+                    <p class="mytext-mobile">Jackson Antonio Silva, 19 anos, aspirante a desenvolvedor front-end
+                        apaixonado por
+                        programação, basquete e academia. Em busca do primeiro trabalho/estágio para aplicar minha
+                        paixão
+                        pelo código e contribuir para projetos inovadores.</p>
+                </div>
+
                 <div class="btns">
                     <div class="CV">
                         <button id="resume">
@@ -86,7 +104,7 @@
 
             <div class="projects-cards">
                 <div class="card">
-                    <div class="card-info">
+                    <div class="card-info" onclick="ProjetoBr()">
                         <img src="assets/image/EXPLORADORBR.png">
                         <div class="card-information">
                             <p>Nov 2023</p>
@@ -104,18 +122,18 @@
                     <div class="project-link">
                         <a target="_blank" href="https://github.com/JackCoder0/ProjetoFaculdadeBrasil"><i
                                 class="uil uil-github"></i></a>
-                        <a href="project-br.html"><i
-                                class="uil uil-arrow-up-right"></i></a>
+                        <a href="project-br.html"><i class="uil uil-arrow-up-right"></i></a>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card-info">
+                    <div class="card-info" onclick="ProjetoPP()">
                         <img src="assets/image/PlayPédia.png">
                         <div class="card-information">
                             <p>Oct 2023</p>
                             <div class="techs">
-                                <i class="devicon-javascript-plain"></i>
+                                <i class="devicon-html5-plain"></i>
+                                <i class="devicon-css3-plain"></i>
                             </div>
                         </div>
                         <div class="card-text">
@@ -169,7 +187,8 @@
                         </div>
                         <div class="contact-text">
                             <p>Estou sempre pronto para bater um papo. Envie-me um e-mail para
-                                jacksonxcontato13@gmail.com ou entre em contato pelas redes sociais.</p>
+                                <a href="mailto:jacksonxcontato13@gmail.com" target="_blank">jacksonxcontato13@gmail.com</a> ou entre em contato pelas redes sociais.
+                            </p>
                         </div>
                         <div class="contact-social">
                             <a target="_blank" href="https://github.com/JackCoder0"><i class="uil uil-github"></i></a>
@@ -192,7 +211,7 @@
     </main> <!-- desktop -->
 
     <footer>
-        <p>Jackson Silva 2023</p>
+        <p>©2024 Copyright - Jackson Silva</p>
         <li>
             <ul><a target="_blank" href="https://github.com/JackCoder0">GitHub</a></ul>
             <ul><a target="_blank" href="https://www.linkedin.com/in/jackson-silva-coder/">Linkedin</a></ul>
