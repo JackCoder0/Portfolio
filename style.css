@@ -926,7 +926,7 @@ footer li ul a:hover {
         display: flex;
         width: 100%;
         padding: 8px 8px 8px 16px;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
         gap: 203px;
     }
