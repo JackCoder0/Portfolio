@@ -985,6 +985,7 @@ footer li ul a:hover {
         gap: 24px;
         align-self: stretch;
         width: 100%;
+        text-align: center;
     }
 
     .name {
