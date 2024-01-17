@@ -156,19 +156,20 @@ main {
     border-radius: 8px;
     border: none;
     color: var(--text-primary);
+    cursor: pointer;
 }
 
-#resume {
+.resume {
     background: var(--surface-secondary);
     color: var(--text-primary);
 }
 
-#resume:hover {
+.resume:hover {
     background: var(--surface-tertiary);
     color: var(--text-primary);
 }
 
-#resume:focus {
+.resume:focus {
     background: var(--surface-tertiary);
     color: var(--text-primary);
     border-radius: 8px;
@@ -287,6 +288,8 @@ main {
     border: none;
     background-color: var(--tech-color-400);
     color: var(--text-primary);
+    cursor: pointer;
+    
 }
 
 #resume-about:hover {
