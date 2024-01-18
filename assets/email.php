@@ -17,6 +17,7 @@ $header = "From: teste@gmail.com" . "\n" .
 
 if (mail($to, $subject, $body, $header)) {
     echo ("E-mail enviado com sucesso!");
-}else{
+} else {
     echo ("Houve um erro ao enviar o email!");
 }
+?>
