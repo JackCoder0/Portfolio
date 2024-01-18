@@ -217,12 +217,12 @@
                     </div>
                 </div>
 
-                <div class="form">
-                    <input type="text" placeholder="Nome" class="inputname">
-                    <input type="email" placeholder="E-mail" class="inputemail">
-                    <textarea class="textarea" name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
-                    <button>Me envie sua mensagem <i class="uil uil-arrow-right"></i></button>
-                </div>
+                <form class="form" method="post" action="assets/email.php">
+                    <input type="text" placeholder="Nome" name="name" class="inputname">
+                    <input type="email" placeholder="E-mail" name="email" class="inputemail">
+                    <textarea class="textarea" name="message" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+                    <button type="submit" value="Enviar">Me envie sua mensagem <i class="uil uil-arrow-right"></i></button>
+                <form/>
             </div>
         </section> <!-- contact -->
     </main>
