@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <script src="script.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("kI6U2WvxaNcXxdkkw");
+        })();
+    </script>
 </head>
 
 <body>
@@ -217,13 +224,13 @@
                     </div>
                 </div>
 
-                <form class="form" method="post" action="https://formsubmit.co/jacksonxcontato13@gmail.com">
-                    <input type="text" placeholder="Nome" name="name" class="inputname">
-                    <input type="email" placeholder="E-mail" name="email" class="inputemail">
-                    <textarea class="textarea" name="message" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
-                    <input type="hidden" name="_next" value="thanks.html">
-                    <button type="submit">Me envie sua mensagem <i class="uil uil-arrow-right"></i></button>
-                <form/>
+                <form id="contact-form" class="form" method="post">
+                    <input id="name" type="text" placeholder="Nome" class="inputname">
+                    <input id="email" type="email" placeholder="E-mail" class="inputemail">
+                    <textarea id="message" class="textarea" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+                    <button class="submit-btn" onclick="sendMail()" type="submit">Me envie sua mensagem <i
+                            class="uil uil-arrow-right"></i></button>
+                    <form />
             </div>
         </section> <!-- contact -->
     </main>

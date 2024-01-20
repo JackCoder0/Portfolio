@@ -601,6 +601,7 @@ main {
     border-radius: 8px;
     border: none;
     background: #171023;
+    color: var(--text-primary);
 }
 
 .textarea::placeholder,
@@ -627,6 +628,7 @@ main {
     border-radius: 8px;
     border: none;
     background: #171023;
+    color: var(--text-primary);
 
 }
 
