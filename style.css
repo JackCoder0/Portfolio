@@ -886,6 +886,21 @@ footer li ul a:hover {
     cursor: pointer;
 }
 
+.next-project{
+    color: var(--text-primary);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+}
+.next-project i{
+    font-size: 50px;
+}
+
 /* Telas de Celular */
 
 @media screen and (max-width: 480px) {
