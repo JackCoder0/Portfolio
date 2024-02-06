@@ -111,10 +111,6 @@ main {
     gap: 32px;
 }
 
-.text-container-mobile {
-    display: none;
-}
-
 .name {
     font-family: 'Kalam', cursive;
     font-weight: 400;
@@ -200,10 +196,6 @@ main {
     width: 488px;
     height: 417px;
     flex-shrink: 0;
-}
-
-.img-mobile {
-    display: none;
 }
 
 .about {
@@ -1003,20 +995,15 @@ footer li ul a:hover {
         gap: 24px;
         align-self: stretch;
         width: 100%;
+        flex-direction: column-reverse;
     }
-
-    .img-headline {
-        display: none;
-    }
-
-    .img-mobile {
+    .img-headline{
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
     }
-
-    .img-mobile img {
+    .img-headline img{
         width: 312px;
         height: 266px;
     }
@@ -1028,38 +1015,12 @@ footer li ul a:hover {
         gap: 24px;
         align-self: stretch;
         width: 100%;
+        text-align: center;
     }
 
     .name {
         margin: 0 auto;
-    }
-
-    .text-container-mobile {
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        gap: 16px;
-    }
-
-    .front-end-desk {
-        display: none;
-    }
-
-    .mytext-desk {
-        display: none;
-    }
-
-    .front-end-mobile {
-        color: var(--text-primary);
-        font-size: 24px;
-        font-weight: 500;
-    }
-
-    .mytext-mobile {
-        color: var(--text-secondary);
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%;
     }
 
     .btns {
