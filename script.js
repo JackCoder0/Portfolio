@@ -35,7 +35,7 @@ function downloadFile(filePath, fileName) {
 }
 
 document.getElementById('resume').addEventListener('click', function () {
-    var filePath = 'assets/pdf/Curriculo.pdf';
+    var filePath = 'assets/pdf/Curriculo_Atualizado.pdf';
     var fileName = 'cv-jackson.pdf';
     downloadFile(filePath, fileName);
 });
