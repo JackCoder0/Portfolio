@@ -41,7 +41,7 @@ document.getElementById('resume').addEventListener('click', function () {
 });
 
 document.getElementById('resume-about').addEventListener('click', function () {
-    var filePath = 'assets/pdf/Curriculo.pdf';
+    var filePath = 'assets/pdf/Curriculo_Atualizado.pdf';
     var fileName = 'cv-jackson.pdf';
     downloadFile(filePath, fileName);
 });

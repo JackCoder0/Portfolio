@@ -281,7 +281,7 @@ main {
     background-color: var(--tech-color-400);
     color: var(--text-primary);
     cursor: pointer;
-    
+
 }
 
 #resume-about:hover {
@@ -346,15 +346,11 @@ main {
     border-radius: 16px;
     position: relative;
     cursor: pointer;
-
+    transition: transform 0.3s ease-in-out;
 }
 
-
 .card:hover {
-    border: 1.5px solid var(--tech-secondary);
-    box-shadow: 0px 0px 48px 0px rgba(125, 255, 175, 0.24);
-    transition: 0.5s;
-    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .project-link {
@@ -878,7 +874,7 @@ footer li ul a:hover {
     cursor: pointer;
 }
 
-.next-project{
+.next-project {
     color: var(--text-primary);
     font-size: 20px;
     text-align: center;
@@ -889,7 +885,8 @@ footer li ul a:hover {
     margin: auto;
     gap: 20px;
 }
-.next-project i{
+
+.next-project i {
     font-size: 50px;
 }
 
@@ -997,13 +994,15 @@ footer li ul a:hover {
         width: 100%;
         flex-direction: column-reverse;
     }
-    .img-headline{
+
+    .img-headline {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
     }
-    .img-headline img{
+
+    .img-headline img {
         width: 312px;
         height: 266px;
     }
