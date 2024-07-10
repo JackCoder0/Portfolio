@@ -139,7 +139,12 @@ html {
 
 .c-skills h2 {
   text-align: center;
-  margin: 30px 0;
+  margin: 20px 0;
+}
+
+.c-skills p{
+  text-align: center;
+  margin: 10px 0;
 }
 
 .skills {
@@ -147,20 +152,24 @@ html {
   justify-content: space-evenly;
   align-items: center;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
-.description {
-  margin-left: 18px;
+.box-skills i{
+  font-size: 60px;
 }
 
 .box-skills {
   background-color: lightcoral;
-  width: 300px;
-  height: 200px;
+  width: 8rem;
+  height: 8rem;
   padding: 30px 0;
   border-radius: 20px;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .box-skills img {
@@ -181,6 +190,7 @@ html {
   color: red;
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
