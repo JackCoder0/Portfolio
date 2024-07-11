@@ -4,18 +4,32 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-primary: #e7e8ee;
+  --background: #040406;
+  --color-primary: #949ddb;
+  --color-secondary: #1b2b7e;
+  --color-tertiary: #0b102a;
+  --color-accent: #334bd5;
+  --color-dark: ;
+}
+
 body,
 html {
   width: 100%;
-  background-color: lightblue;
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: "Nunito", sans-serif;
 }
 
 .header {
-  background-color: red;
+  background-color: var(--background);
   width: 100%;
   padding: 20px;
   position: fixed;
   top: 0;
+  z-index: 999;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
@@ -73,14 +87,15 @@ html {
 }
 
 .btn {
-  background-color: red;
+  background-color: var(--color-tertiary);
   padding: 14px 34px;
   color: #f4f4ff;
   font-weight: 600;
 }
 
 .two {
-  background-color: #5171a5;
+  background-color: var(--color-primary);
+  color: var(--background);
 }
 
 .share {
@@ -90,7 +105,6 @@ html {
 
 .share p {
   font-size: 17px;
-  color: blue;
 }
 
 .social {
@@ -124,7 +138,7 @@ html {
 .about-me h4 {
   font-size: 1rem;
   margin-bottom: 0.7rem;
-  color: rebeccapurple;
+  color: var(--color-accent);
   font-weight: 700;
 }
 .about-me h2 {
@@ -133,17 +147,21 @@ html {
   margin-bottom: 1rem;
 }
 .about-me p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   width: 600px;
+  text-align: justify;
+  margin-bottom: 5px;
 }
 
 .c-skills h2 {
   text-align: center;
   margin: 20px 0;
+  text-transform: uppercase;
 }
 
-.c-skills p{
+.c-skills p {
   text-align: center;
+  font-size: 18px;
   margin: 10px 0;
 }
 
@@ -155,7 +173,7 @@ html {
   margin: 20px auto;
 }
 
-.box-skills i{
+.box-skills i {
   font-size: 60px;
 }
 
@@ -187,8 +205,8 @@ html {
 }
 
 .c-timeline h4 {
-  color: red;
-  font-size: 1rem;
+  color: var(--color-accent);
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
   text-align: center;
@@ -215,7 +233,8 @@ html {
 .experiences {
   position: relative;
   padding: 0 3rem 2rem;
-  border-left: 0.2rem solid red;
+  border-left: 0.2rem solid var(--color-secondary);
+  margin-left: 15rem;
 }
 
 .icons-timeline {
@@ -228,7 +247,7 @@ html {
   line-height: 5rem;
   text-align: center;
   font-size: 2.3rem;
-  background: red;
+  background: var(--color-secondary);
 }
 
 .timeline-information {
@@ -237,16 +256,34 @@ html {
   border-left: 2.6rem;
 }
 
-.c-portfolio h4 {
-  color: lightcoral;
+.timeline-information span {
+  background-color: var(--color-tertiary);
+  padding: 0.5rem 1.5rem;
   font-size: 1rem;
+  border-radius: 50rem;
+}
+
+.timeline-information h3 {
+  padding: 1rem 0;
+}
+
+.timeline-information p {
+  max-width: 900px;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.c-portfolio h4 {
+  color: var(--color-accent);
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   text-align: center;
 }
 
 .c-portfolio h2 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
