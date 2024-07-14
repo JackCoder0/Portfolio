@@ -407,6 +407,7 @@ html {
   border: var(--color-accent) 2px solid;
   background-color: #f2f2f2;
   box-shadow: var(--color-accent) 1px 1px 10px;
+  resize: none;
 }
 
 .forms-contato button {
